@@ -1,0 +1,18 @@
+{% extends 'sticky_app/base.html' %}
+
+{% block content %}
+<!-- Container for the index page content -->
+<div class="index-page">
+    <h1>Welcome to Sticky Notes</h1>
+    <a href="{% url 'add_note' %}">Add New Note</a>
+     <!-- Unordered list for displaying notes -->
+    <ul>
+         <!-- Loop through notes to display each one -->
+        {% for note in notes %}
+        <!-- Link to view note details and its published date -->
+        <li><a href="{% url 'view_note' note.id %}">{{note.title}}</a> -  {{note.published_date}}                                                                                          
+        </li>
+         {% endfor %}
+    </ul>
+</div>
+{% endblock %}

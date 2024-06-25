@@ -1,0 +1,23 @@
+{% extends 'sticky_app/base.html' %}
+<!---Internal styling also, override base-->
+{% block content %}
+<!-- Container for the view note page content with inline styling -->
+<div class="view-note" style="background-color: #fff; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); padding: 15px; margin-bottom: 20px; max-width: 600px; width: 100%;">
+    <!-- Note title with specific font size, color, and margin -->
+    <h1 style="font-family: 'Courier New', Courier, monospace; 
+    font-size: 24px; color: #333; 
+    margin-bottom: 10px;">{{ note.title }}</h1>
+    <!-- Note content with specific bottom margin -->
+    <p style="margin-bottom: 10px;">{{ note.content }}</p>
+    <!-- Display the published date of the note -->
+    <p><strong>Date Published:</strong> {{ note.published_date }}</p>
+    <!-- Link to edit note with specific styling -->
+    <a href="{% url 'edit_note' note.id %}" style="background-color: #3498db; 
+    color: #fff; padding: 8px 12px; text-decoration: none; border-radius: 4px; 
+    margin-right: 10px;">Edit Note</a>
+    <!-- Link to go back to notes list with specific styling -->
+    <a href="{% url 'index' %}" style="background-color: #3498db; color: #fff; 
+    padding: 8px 12px; text-decoration: none; border-radius: 4px;">Back to Notes</a>
+
+</div>
+{% endblock %}

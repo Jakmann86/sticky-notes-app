@@ -1,0 +1,190 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Index page styles */
+.index-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.index-page h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.index-page a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffff00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.index-page a:hover {
+    background-color: #0056b3;
+}
+
+.index-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.index-page ul li {
+    margin-bottom: 10px;
+}
+
+.index-page ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.index-page ul li a:hover {
+    color: #ff7b00;
+}
+
+/* Add note page styles */
+.add_note {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(50, 255, 88);
+}
+
+.add_note h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.add_note form {
+    margin-top: 15px;
+}
+
+.add_note label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add_note input[type="text"],
+.add_note textarea,
+.add_note input[type="color"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add_note button {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #ff00a2;
+    color: #050505;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.add_note button:hover {
+    background-color: #b3004e;
+}
+
+.add_note a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add_note a:hover {
+    background-color: #ddd;
+}
+
+/* Base styling for sticky notes */
+.edit-page, .view-note, .delete-note {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Title styling */
+.edit-page h1, .view-note h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Form input styling */
+.edit-page form, .view-note p {
+    margin-bottom: 10px;
+}
+
+.edit-page input[type="text"],
+.edit-page textarea,
+.edit-page button[type="submit"],
+.view-note button[type="submit"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Delete button styling */
+.delete-note form button[type="submit"] {
+    background-color: #e74c3c;
+    color: #e74c3c;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Cancel link styling */
+.edit-page a, .view-note a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.edit-page a:hover, .view-note a:hover {
+    text-decoration: underline;
+}
